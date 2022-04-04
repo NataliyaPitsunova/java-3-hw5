@@ -23,8 +23,10 @@ public class Main {
         for (int i = 0; i < cars.length; i++) {
             new Thread(cars[i]).start();
         }
+        //ожидает готовность всех участников
         cdlGo.await();
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
+        //ожидает финиширования всех участников
         cdlFinish.await();
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
     }

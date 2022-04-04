@@ -8,7 +8,7 @@ public class Tunnel extends Stage {
         this.description = "Тоннель " + length + " метров";
     }
     @Override
-    public void go(Car c, int i) {
+    public void go(Car c) {
         try {
             try {
                 System.out.println(c.getName() + " готовится к этапу(ждет): " + description);
