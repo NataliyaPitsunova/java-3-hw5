@@ -4,6 +4,6 @@ public abstract class Stage {
     public String getDescription() {
         return description;
     }
-    public abstract void go(Car c,int i);
+    public abstract void go(Car c);
 
 }
